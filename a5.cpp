@@ -10,13 +10,14 @@ class rectangle
 
    public:
     void setlenght(int l)
-    {
+      { 
+
         if(l>=0)
         length=l;
         else
          {
         cout<<"entered lenght cant be negative"<<endl;
-        length=0;
+        l=0;
          }
     }
      
@@ -29,7 +30,6 @@ class rectangle
          cout<<"entered breadth cant be negative"<<endl;
          breadth=0;
          }
-          
      }
 
      int getlenght()
@@ -45,12 +45,12 @@ class rectangle
     
     int area()
     {
-        return length*breadth;
+        return breadth;
     }
     
     int perimeter()
     {
-        return 2*(length+breadth);
+        return 2*(+breadth);
     }
 
 
