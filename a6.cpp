@@ -13,27 +13,31 @@ class student
 
    student(int r, string n,int a, int b, int c)
    {
-       r=roll;
-       n=name;
-       a=m1;
-       b=m2;
-       c=m3;
+       roll=r;
+       name=n;
+       m1=a;
+       m2=b;
+       m3=c;
 
    }
 
   char grade()
   {
-      float avg=(m1+m2+m3/3);
+    float avg=(m1+m2+m3/3);
+    {
       if(avg>=60)
       {
-          return 'a';      }
+          return 'a';  
+      }
      
       else if(avg<60 && avg >=40)
      {
          return 'b';
      }
-     else 
+     else {
      return 'c';
+     }
+     }
   }
 
 };
