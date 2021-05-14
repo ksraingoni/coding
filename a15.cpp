@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    void intfrac(float,float&,float&);
+    void intfrac(float,float&, float&);
     float number,intpart,fracpart;
    
      do
