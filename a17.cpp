@@ -1,31 +1,22 @@
 #include<iostream>
 using namespace std;
 
-int fac(int i,int n);
 int main()
-{        
-    int i,j,n,fact=1;
-    for(i=1;i<=n;i++)
-    {
-            cout<<"enter a number :";
+{
+    int i,fact=1,j,n,temp=0;
+    cout<<"enter a number";
     cin>>n;
 
-        fac(i,n);                
-          cout<<"factorial of a number is:"<<i<<"\t"<<fact<<endl;
-
-    }
-
-    return 0;
-
-}
-
-int fac(int i,int n)
-{    
-    int j,n,fact=1;
-    for(int j=1;j<=n;j++)
+    for(i=1;i<=n;i++)
     {
+        for(j=1;j<=i;j++){
         fact=fact*j;
-        return fact;
-    }
+        }        
+        
+        temp=fact;
 
+        
+    cout<<"fact of given num is"<<i << fact<<endl;
+
+    }
 }
