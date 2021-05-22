@@ -3,19 +3,22 @@ using namespace std;
 
 int main()
 {
-    int i,fact=1,j,n,temp=0;
-    cout<<"enter a number";
-    cin>>n;
+    int a,b,i,j,fact=1;
+    cout<<"enter a starting  number";
+    cin>>a;
 
-    for(i=1;i<=n;i++)
-    {
+    cout<<"enter last number in range";
+    cin>>b;
+
+
+    for(i=a;i<=b;i++)
+    {   
+        fact=1;
         for(j=1;j<=i;j++){
         fact=fact*j;
         }        
         
-        temp=fact;
 
-        
     cout<<"fact of given num is"<<i << fact<<endl;
 
     }
